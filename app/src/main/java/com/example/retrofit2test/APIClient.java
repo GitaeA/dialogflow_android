@@ -15,7 +15,7 @@ public class APIClient {
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://6b1d5354.ngrok.io/")
+                .baseUrl("http://localhost:5000/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();
